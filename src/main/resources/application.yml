@@ -1,0 +1,16 @@
+server:
+ port: 8181
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/person_website?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: root
+#ʹ�ð���Ͱ͵�����Դ��Ĭ��ʹ���Դ���
+    type: com.alibaba.druid.pool.DruidDataSource
+  thymeleaf:
+      prefix: classpath:/templates/
+#��ӡsql�������
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
